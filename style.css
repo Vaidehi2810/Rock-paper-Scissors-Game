@@ -1,0 +1,88 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading */
+h1{
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+/* Choice buttons */
+.choice{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+/* Hover effect (smooth + famous animation style) */
+.choice:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+/* Image inside circle */
+img{
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Choices container */
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+/* Score board */
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+    gap: 5rem;
+}
+
+#comp-score,#user-score{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/* Message container */
+.msg-container{
+    margin-top: 4rem;
+}
+
+#msg{
+    display: inline-block;
+    min-width: 350px;
+    padding: 20px 40px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: #081b31;
+    color: white;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+/* Draw / win / lose animation */
+#msg:hover{
+    transform: scale(1.05);
+}
